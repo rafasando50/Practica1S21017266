@@ -39,14 +39,19 @@ public class TablasApplication {
     }
 
     static void mostrarTabla() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce el numero de la tabla a mostrar ");
-        int n = sc .nextInt();
-
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(n + " x " + i + " = " + (n* i));
-        }
-        System.out.println();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Introduzca el numero de tabla a mostrar ");
+		int n = sc.nextInt();
+		sc.nextLine();
+	
+		System.out.println("Ingrese su nombre: ");
+		String nombre = sc.nextLine();
+	
+		System.out.println(nombre + " esta es la tabla del " + n);
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(n + " x " + i + " = " + (n * i));
+		}
+		System.out.println();
     }
 
     static void mostrarTablasDel2Al5() {
